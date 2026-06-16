@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shyra - Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-glassmorphism">
+        <div class="container-fluid px-4 px-md-5">
+            <a class="navbar-brand fw-bold" href="#home">Shyra</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#works">Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="home-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="profile-image-container mb-4">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" 
+                             alt="Profile" class="profile-image">
+                    </div>
+                    
+                    <h1 class="display-4 fw-bold mb-2 text-white fade-in">Hello, I'm Shyra</h1>
+                    <h2 class="h4 text-light mb-4 fade-in">Information Technology Student</h2>
+                    
+                    <p class="lead text-light mb-5 fade-in intro-text">
+                        I'm into technology, photography, and creative solutions. Currently studying IT while exploring my passion for visual storytelling through photography and videography. I love bringing ideas to life and creating content that resonates with people.
+                    </p>
+                    
+                    <div class="d-flex gap-3 justify-content-center flex-wrap fade-in">
+                        <a href="#works" class="btn btn-primary btn-lg btn-custom">View My Work</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg btn-custom">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=500&fit=crop" 
+                         alt="About" class="img-fluid rounded-4 shadow-lg about-image">
+                </div>
+                <div class="col-lg-7 ps-lg-4">
+                    <div class="about-content scroll-reveal">
+                        <h2 class="h2 fw-bold mb-4 text-light">About Me</h2>
+                        <p class="text-light mb-4 lh-lg">
+                            I'm pursuing a degree in Information Technology and I'm really passionate about the intersection of tech and creativity. Beyond coding and development, I spend a lot of time behind the camera—whether it's photography, videography, or digital design. That creative side of me balances out the technical side pretty well.
+                        </p>
+                        <p class="text-light mb-4 lh-lg">
+                            I genuinely enjoy the process of creating, whether it's building something functional or capturing a meaningful moment. I believe in quality over quantity and I always try to put thought and intention into whatever I work on. I'm constantly learning, experimenting with new tools, and pushing myself to improve.
+                        </p>
+                        <a href="#contact" class="btn btn-primary btn-custom">Let's Talk</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section py-5">
+        <div class="container">
+            <h2 class="h2 fw-bold mb-5 text-center scroll-reveal text-light">Skills</h2>
+            
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="skill-card scroll-reveal">
+                        <div class="skill-icon mb-3">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-2 text-light">Photography</h3>
+                        <p class="text-light small">Visual storytelling and composition</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="skill-card scroll-reveal">
+                        <div class="skill-icon mb-3">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-2 text-light">Photo Editing</h3>
+                        <p class="text-light small">Post-production and enhancement</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="skill-card scroll-reveal">
+                        <div class="skill-icon mb-3">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-2 text-light">Videography</h3>
+                        <p class="text-light small">Video content creation</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="skill-card scroll-reveal">
+                        <div class="skill-icon mb-3">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-2 text-light">Creative Thinking</h3>
+                        <p class="text-light small">Problem-solving and ideation</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="skill-card scroll-reveal">
+                        <div class="skill-icon mb-3">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-2 text-light">Collaboration</h3>
+                        <p class="text-light small">Team projects and communication</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="skill-card scroll-reveal">
+                        <div class="skill-icon mb-3">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-2 text-light">Technical Skills</h3>
+                        <p class="text-light small">Web and software development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="hobbies-section py-5">
+        <div class="container">
+            <h2 class="h2 fw-bold mb-5 text-center scroll-reveal text-light">Hobbies</h2>
+            
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="hobby-card scroll-reveal">
+                        <div class="hobby-icon mb-3">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3 class="h5 fw-bold text-light">Photography</h3>
+                        <p class="text-light small">Capturing moments</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="hobby-card scroll-reveal">
+                        <div class="hobby-icon mb-3">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h3 class="h5 fw-bold text-light">Filmmaking</h3>
+                        <p class="text-light small">Creating videos</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="hobby-card scroll-reveal">
+                        <div class="hobby-icon mb-3">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="h5 fw-bold text-light">Design</h3>
+                        <p class="text-light small">Visual creation</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="hobby-card scroll-reveal">
+                        <div class="hobby-icon mb-3">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3 class="h5 fw-bold text-light">Technology</h3>
+                        <p class="text-light small">Learning new tools</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="works" class="works-section py-5">
+        <div class="container">
+            <h2 class="h2 fw-bold mb-5 text-center scroll-reveal text-light">Recent Work</h2>
+            
+            <div class="d-flex justify-content-center gap-2 mb-5 flex-wrap scroll-reveal">
+                <button class="btn btn-filter active" data-filter="all">All</button>
+                <button class="btn btn-filter" data-filter="photography">Photography</button>
+                <button class="btn btn-filter" data-filter="videography">Video</button>
+                <button class="btn btn-filter" data-filter="editing">Editing</button>
+                <button class="btn btn-filter" data-filter="behind-scenes">Behind the Scenes</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item scroll-reveal" data-category="photography">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&h=400&fit=crop" 
+                             alt="Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3 class="h5 fw-bold">Photography Session</h3>
+                                <p class="small">Creative photography work</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item scroll-reveal" data-category="videography">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f70d504f0?w=400&h=400&fit=crop" 
+                             alt="Video Production" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3 class="h5 fw-bold">Video Production</h3>
+                                <p class="small">Professional video work</p>
+                                <span class="badge"><i class="fas fa-play"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item scroll-reveal" data-category="editing">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=400&fit=crop" 
+                             alt="Editing" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3 class="h5 fw-bold">Post Production</h3>
+                                <p class="small">Color grading and editing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item scroll-reveal" data-category="photography">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1497206365907-3ff1691bc492?w=400&h=400&fit=crop" 
+                             alt="Project" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3 class="h5 fw-bold">Creative Project</h3>
+                                <p class="small">Personal project</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item scroll-reveal" data-category="behind-scenes">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1536240080913-3a6b37e0bef3?w=400&h=400&fit=crop" 
+                             alt="Behind the Scenes" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3 class="h5 fw-bold">Process Work</h3>
+                                <p class="small">Production moments</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item scroll-reveal" data-category="photography">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&h=400&fit=crop" 
+                             alt="Urban" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3 class="h5 fw-bold">Urban Photography</h3>
+                                <p class="small">City landscape series</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item scroll-reveal" data-category="videography">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f70d504f0?w=400&h=400&fit=crop" 
+                             alt="Studio" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3 class="h5 fw-bold">Studio Recording</h3>
+                                <p class="small">Professional setup</p>
+                                <span class="badge"><i class="fas fa-play"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item scroll-reveal" data-category="editing">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=400&fit=crop" 
+                             alt="Workspace" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3 class="h5 fw-bold">Editing Workspace</h3>
+                                <p class="small">Color correction work</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photography Business -->
+            <div class="photography-business mt-5 scroll-reveal">
+                <div class="business-card">
+                    <h3 class="h5 fw-bold mb-3 text-light">Photography & Videography Services</h3>
+                    <p class="text-light mb-3">
+                        I offer professional photography and videography services through <strong>SLN Captures</strong>. Whether you need event coverage, product photography, or creative video content, I'd love to work with you. Feel free to visit our page to see more of our work.
+                    </p>
+                    <a href="https://www.facebook.com/share/1EH2FEMeue/?mibextid=wwXIfr" target="_blank" class="btn btn-sm btn-primary">
+                        Visit SLN Captures
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <h2 class="h2 fw-bold mb-5 text-center scroll-reveal text-light">Get in Touch</h2>
+            
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="contact-info-box scroll-reveal">
+                        <h3 class="h4 fw-bold mb-4 text-light">Ways to Reach Me</h3>
+                        
+                        <div class="contact-info mb-4">
+                            <div class="d-flex align-items-start">
+                                <div class="contact-icon me-3">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-light small mb-1">Email</p>
+                                    <a href="mailto:rubianesshyramae@gmail.com" class="text-light text-decoration-none fw-500">
+                                        rubianesshyramae@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <p class="text-light small mb-3 fw-bold">Connect on Social</p>
+                            <div class="d-flex gap-3">
+                                <a href="https://www.facebook.com/share/1bdtTYVdGG/?mibextid=wwXIfr" target="_blank" class="social-link" title="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.facebook.com/share/1bdtTYVdGG/?mibextid=wwXIfr" target="_blank" class="social-link" title="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <p class="text-light small mb-0">Feel free to reach out anytime. I'm always interested in connecting with new people and hearing about your ideas or projects.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="contact-methods scroll-reveal">
+                        <h3 class="h4 fw-bold mb-4 text-light">Other Ways to Connect</h3>
+                        
+                        <div class="method-card mb-3">
+                            <h4 class="small fw-bold mb-2 text-light">Direct Message</h4>
+                            <p class="text-light small mb-0">You can reach me via Facebook or Instagram direct messages for quick conversations.</p>
+                        </div>
+
+                        <div class="method-card mb-3">
+                            <h4 class="small fw-bold mb-2 text-light">Business Inquiries</h4>
+                            <p class="text-light small mb-0">For photography and videography services, feel free to visit SLN Captures or email me directly about your project.</p>
+                        </div>
+
+                        <div class="method-card">
+                            <h4 class="small fw-bold mb-2 text-light">Collaborations</h4>
+                            <p class="text-light small mb-0">Interested in collaborating on creative projects? I'd love to hear about your ideas and see how we can work together.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <p class="text-light mb-0">© 2026 Shyra Mae Rubianes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
