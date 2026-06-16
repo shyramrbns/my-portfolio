@@ -5,20 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shyra - Portfolio</title>
     
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Google Fonts - Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-glassmorphism">
         <div class="container-fluid px-4 px-md-5">
             <a class="navbar-brand fw-bold" href="#home">My Portfolio</a>
@@ -38,14 +30,12 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="home-section">
         <div class="container h-100">
             <div class="row h-100 align-items-center justify-content-center">
                 <div class="col-lg-8 text-center">
                     <div class="profile-image-container mb-4">
-                        <img src="upload/profile.jpeg" 
-                             alt="Profile" class="profile-image">
+                        <img src="upload/profile.jpeg" alt="Profile" class="profile-image">
                     </div>
                     
                     <h1 class="display-4 fw-bold mb-2 text-white fade-in">Hello, I'm Shyra</h1>
@@ -64,13 +54,14 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about-section py-5">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-5 mb-4 mb-lg-0">
-                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=500&fit=crop" 
-                         alt="About" class="img-fluid rounded-4 shadow-lg about-image">
+                <div class="col-lg-5 mb-4 mb-lg-0 d-flex justify-content-center">
+                    <div class="about-photo-swap">
+                        <img src="upload/about1.jpeg" alt="About Me" class="about-img about-img-primary">
+                        <img src="upload/about2.jpeg" alt="About Me Alt" class="about-img about-img-secondary">
+                    </div>
                 </div>
                 <div class="col-lg-7 ps-lg-4">
                     <div class="about-content scroll-reveal">
@@ -79,7 +70,7 @@
                             I'm pursuing a degree in Information Technology and I'm really passionate about the intersection of tech and creativity. Beyond coding and development, I spend a lot of time behind the camera—whether it's photography, videography, or digital design. That creative side of me balances out the technical side pretty well.
                         </p>
                         <p class="text-light mb-4 lh-lg">
-                            I genuinely enjoy the process of creating, whether it's building something functional or capturing a meaningful moment. I believe in quality over quantity and I always try to put thought and intention into whatever I work on. I'm constantly learning, experimenting with new tools, and pushing myself to improve.
+                            I genuinely enjoy the process of creating, whether it's building something functional or capturing a meaningful moment. I believe in quality over quality and I always try to put thought and intention into whatever I work on. I'm constantly learning, experimenting with new tools, and pushing myself to improve.
                         </p>
                         <a href="#contact" class="btn btn-primary btn-custom">Let's Talk</a>
                     </div>
@@ -88,7 +79,6 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="skills-section py-5">
         <div class="container">
             <h2 class="h2 fw-bold mb-5 text-center scroll-reveal text-light">Skills</h2>
@@ -157,7 +147,6 @@
         </div>
     </section>
 
-    <!-- Hobbies Section -->
     <section id="hobbies" class="hobbies-section py-5">
         <div class="container">
             <h2 class="h2 fw-bold mb-5 text-center scroll-reveal text-light">Hobbies</h2>
@@ -206,128 +195,237 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
     <section id="works" class="works-section py-5">
         <div class="container">
-            <h2 class="h2 fw-bold mb-5 text-center scroll-reveal text-light">Recent Work</h2>
-            
+            <h2 class="h2 fw-bold mb-2 text-center scroll-reveal text-light">Recent Work</h2>
+            <p class="text-center text-light small mb-5 scroll-reveal" style="opacity:0.6;">Hover over a card to explore</p>
+
             <div class="d-flex justify-content-center gap-2 mb-5 flex-wrap scroll-reveal">
                 <button class="btn btn-filter active" data-filter="all">All</button>
+                <button class="btn btn-filter" data-filter="dev">Dev Projects</button>
                 <button class="btn btn-filter" data-filter="photography">Photography</button>
                 <button class="btn btn-filter" data-filter="videography">Video</button>
-                <button class="btn btn-filter" data-filter="editing">Editing</button>
-                <button class="btn btn-filter" data-filter="behind-scenes">Behind the Scenes</button>
+                <button class="btn btn-filter" data-filter="client">Client Work</button>
             </div>
 
             <div class="gallery-grid">
-                <div class="gallery-item scroll-reveal" data-category="photography">
+
+                <div class="gallery-item scroll-reveal" data-category="dev">
                     <div class="gallery-card">
-                        <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&h=400&fit=crop" 
-                             alt="Photography" class="gallery-image">
+                        <img src="upload/triketrace_web.png" alt="TrikeTrace Web" class="gallery-image">
                         <div class="gallery-overlay">
                             <div class="gallery-content">
-                                <h3 class="h5 fw-bold">Photography Session</h3>
-                                <p class="small">Creative photography work</p>
+                                <h3 class="h5 fw-bold">TrikeTrace Web</h3>
+                                <p class="small">Booking and e-commerce platform with integrated database backend</p>
+                                <div class="lang-tags">
+                                    <span class="lang-tag">PHP</span>
+                                    <span class="lang-tag">SQL</span>
+                                    <span class="lang-tag">Web Dev</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item scroll-reveal" data-category="dev">
+                    <div class="gallery-card">
+                        <img src="upload/colormatch-gamedev.png" alt="Color Match" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3 class="h5 fw-bold">Color Match App</h3>
+                                <p class="small">Interactive color matching tool with full graphical user interface</p>
+                                <div class="lang-tags">
+                                    <span class="lang-tag">Python</span>
+                                    <span class="lang-tag">Tkinter</span>
+                                    <span class="lang-tag">Game Dev</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item scroll-reveal" data-category="dev">
+                    <div class="gallery-card">
+                        <img src="upload/sln-website.png" alt="SLN Website" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3 class="h5 fw-bold">SLN Business Website</h3>
+                                <p class="small">Multi-language business website with database integration for SLN Captures</p>
+                                <div class="lang-tags">
+                                    <span class="lang-tag">Python</span>
+                                    <span class="lang-tag">SQL</span>
+                                    <span class="lang-tag">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item scroll-reveal" data-category="dev">
+                    <div class="gallery-card">
+                        <img src="upload/coding.jpeg" alt="Coding" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3 class="h5 fw-bold">Development Process</h3>
+                                <p class="small">Behind the scenes where logic comes together and solutions take shape</p>
+                                <div class="lang-tags">
+                                    <span class="lang-tag">Python</span>
+                                    <span class="lang-tag">Web Dev</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item scroll-reveal" data-category="photography">
+                    <div class="gallery-card">
+                        <img src="upload/buildingscapture.jpeg" alt="Building Sunset" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3 class="h5 fw-bold">Urban Sunset</h3>
+                                <p class="small">City landscape captured with golden hour light reflecting off modern architecture</p>
+                                <div class="lang-tags">
+                                    <span class="lang-tag">Photography</span>
+                                    <span class="lang-tag">Landscape</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item scroll-reveal" data-category="photography">
+                    <div class="gallery-card">
+                        <img src="upload/cityscapephotograpy.jpeg" alt="City Portrait" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3 class="h5 fw-bold">Urban Portrait</h3>
+                                <p class="small">Portrait session in the city with natural urban elements and dynamic composition</p>
+                                <div class="lang-tags">
+                                    <span class="lang-tag">Photography</span>
+                                    <span class="lang-tag">Portrait</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item scroll-reveal" data-category="photography">
+                    <div class="gallery-card">
+                        <img src="upload/outdoorshoot.jpeg" alt="Outdoor Session" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3 class="h5 fw-bold">Outdoor Session</h3>
+                                <p class="small">On-location shoot capturing natural light and genuine moments in outdoor settings</p>
+                                <div class="lang-tags">
+                                    <span class="lang-tag">Photography</span>
+                                    <span class="lang-tag">Outdoor</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item scroll-reveal" data-category="photography">
+                    <div class="gallery-card">
+                        <img src="upload/documentary_org.jpeg" alt="Documentary" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3 class="h5 fw-bold">Documentary Photography</h3>
+                                <p class="small">Captured moments during school events and documentary coverage of live activities</p>
+                                <div class="lang-tags">
+                                    <span class="lang-tag">Photography</span>
+                                    <span class="lang-tag">Documentary</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="gallery-item scroll-reveal" data-category="videography">
-                    <div class="gallery-card">
-                        <img src="https://images.unsplash.com/photo-1516321318423-f06f70d504f0?w=400&h=400&fit=crop" 
-                             alt="Video Production" class="gallery-image">
+                    <div class="gallery-card gallery-card--video">
+                        <video class="gallery-video" src="upload/sample_video_edit.mp4" muted loop playsinline preload="metadata"></video>
+                        <div class="video-play-indicator">
+                            <i class="fas fa-play"></i>
+                        </div>
                         <div class="gallery-overlay">
                             <div class="gallery-content">
-                                <h3 class="h5 fw-bold">Video Production</h3>
-                                <p class="small">Professional video work</p>
-                                <span class="badge"><i class="fas fa-play"></i></span>
+                                <h3 class="h5 fw-bold">Client Teaser Edit</h3>
+                                <p class="small">Professional short-form video edit crafted for impact and client engagement</p>
+                                <div class="lang-tags">
+                                    <span class="lang-tag">Video Edit</span>
+                                    <span class="lang-tag">Teaser</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="gallery-item scroll-reveal" data-category="editing">
+                <div class="gallery-item scroll-reveal" data-category="client">
                     <div class="gallery-card">
-                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=400&fit=crop" 
-                             alt="Editing" class="gallery-image">
+                        <img src="upload/cabinresort.jpeg" alt="Cabin Resort" class="gallery-image">
                         <div class="gallery-overlay">
                             <div class="gallery-content">
-                                <h3 class="h5 fw-bold">Post Production</h3>
-                                <p class="small">Color grading and editing</p>
+                                <h3 class="h5 fw-bold">Resort Photography</h3>
+                                <p class="small">Professional client work capturing the beauty and atmosphere of resort venues</p>
+                                <div class="lang-tags">
+                                    <span class="lang-tag">Client Work</span>
+                                    <span class="lang-tag">Location</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="gallery-item scroll-reveal" data-category="photography">
+                <div class="gallery-item scroll-reveal" data-category="client">
                     <div class="gallery-card">
-                        <img src="https://images.unsplash.com/photo-1497206365907-3ff1691bc492?w=400&h=400&fit=crop" 
-                             alt="Project" class="gallery-image">
+                        <img src="upload/familypic.jpeg" alt="Family Portrait" class="gallery-image">
                         <div class="gallery-overlay">
                             <div class="gallery-content">
-                                <h3 class="h5 fw-bold">Creative Project</h3>
-                                <p class="small">Personal project</p>
+                                <h3 class="h5 fw-bold">18th Birthday Celebration</h3>
+                                <p class="small">Family portrait session capturing special moments and milestone celebrations</p>
+                                <div class="lang-tags">
+                                    <span class="lang-tag">Client Work</span>
+                                    <span class="lang-tag">Family</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="gallery-item scroll-reveal" data-category="behind-scenes">
+                <div class="gallery-item scroll-reveal" data-category="client">
                     <div class="gallery-card">
-                        <img src="https://images.unsplash.com/photo-1536240080913-3a6b37e0bef3?w=400&h=400&fit=crop" 
-                             alt="Behind the Scenes" class="gallery-image">
+                        <img src="upload/bdaypictorial.jpeg" alt="Birthday Pictorial" class="gallery-image">
                         <div class="gallery-overlay">
                             <div class="gallery-content">
-                                <h3 class="h5 fw-bold">Process Work</h3>
-                                <p class="small">Production moments</p>
+                                <h3 class="h5 fw-bold">Birthday Pictorial</h3>
+                                <p class="small">Pre-shoot pictorial session at resort location capturing candid and posed moments</p>
+                                <div class="lang-tags">
+                                    <span class="lang-tag">Client Work</span>
+                                    <span class="lang-tag">Pictorial</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="gallery-item scroll-reveal" data-category="photography">
+                <div class="gallery-item scroll-reveal" data-category="client">
                     <div class="gallery-card">
-                        <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&h=400&fit=crop" 
-                             alt="Urban" class="gallery-image">
+                        <img src="upload/behindthescene.jpeg" alt="Behind the Scene" class="gallery-image">
                         <div class="gallery-overlay">
                             <div class="gallery-content">
-                                <h3 class="h5 fw-bold">Urban Photography</h3>
-                                <p class="small">City landscape series</p>
+                                <h3 class="h5 fw-bold">Behind the Scenes</h3>
+                                <p class="small">Candid moments from client shoots showing the authentic energy of production</p>
+                                <div class="lang-tags">
+                                    <span class="lang-tag">Client Work</span>
+                                    <span class="lang-tag">BTS</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="gallery-item scroll-reveal" data-category="videography">
-                    <div class="gallery-card">
-                        <img src="https://images.unsplash.com/photo-1516321318423-f06f70d504f0?w=400&h=400&fit=crop" 
-                             alt="Studio" class="gallery-image">
-                        <div class="gallery-overlay">
-                            <div class="gallery-content">
-                                <h3 class="h5 fw-bold">Studio Recording</h3>
-                                <p class="small">Professional setup</p>
-                                <span class="badge"><i class="fas fa-play"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item scroll-reveal" data-category="editing">
-                    <div class="gallery-card">
-                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=400&fit=crop" 
-                             alt="Workspace" class="gallery-image">
-                        <div class="gallery-overlay">
-                            <div class="gallery-content">
-                                <h3 class="h5 fw-bold">Editing Workspace</h3>
-                                <p class="small">Color correction work</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
 
-            <!-- Photography Business -->
             <div class="photography-business mt-5 scroll-reveal">
                 <div class="business-card">
                     <h3 class="h5 fw-bold mb-3 text-light">Photography & Videography Services</h3>
@@ -342,7 +440,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact-section py-5">
         <div class="container">
             <h2 class="h2 fw-bold mb-5 text-center scroll-reveal text-light">Get in Touch</h2>
@@ -408,17 +505,13 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer py-4">
         <div class="container text-center">
             <p class="text-light mb-0">© 2026 Shyra Mae Rubianes. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
 </html>

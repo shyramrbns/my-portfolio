@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initScrollReveal();
     initGalleryFilters();
     initActiveNavLink();
+    initVideoHover();
 });
 
 function initNavigation() {
@@ -12,8 +13,7 @@ function initNavigation() {
         link.addEventListener('click', function(e) {
             const navbarCollapse = document.querySelector('.navbar-collapse');
             if (navbarCollapse.classList.contains('show')) {
-                const bsCollapse = new bootstrap.Collapse(navbarCollapse);
-                bsCollapse.hide();
+                navbarCollapse.classList.remove('show');
             }
             
             const targetId = this.getAttribute('href').substring(1);
@@ -103,6 +103,23 @@ function initGalleryFilters() {
                     item.classList.add('hidden');
                 }
             });
+        });
+    });
+}
+
+function initVideoHover() {
+    const videoCards = document.querySelectorAll('.gallery-card--video');
+    videoCards.forEach(card => {
+        const video = card.querySelector('.gallery-video');
+        if (!video) return;
+
+        card.addEventListener('mouseenter', () => {
+            video.play().catch(() => {});
+        });
+
+        card.addEventListener('mouseleave', () => {
+            video.pause();
+            video.currentTime = 0;
         });
     });
 }
